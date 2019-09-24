@@ -1,4 +1,11 @@
 /**
+
+Problem of the Day:
+
+Reverse the words of a given string.
+
+You can't use language provided string methods (such as split, reverse, etc.)
+
   
   usage:
     g++ rev.cpp
@@ -6,12 +13,12 @@
 
 **/
 
-#include <iostream> 
 
+#include <iostream> 
 
 void reverse_string( char* string )
 {
-  char* m = string;
+  char* m = (char*) string;
   do
   {
     char *n = m;
@@ -25,11 +32,26 @@ void reverse_string( char* string )
 }
 
 
+
 int main( int argc, char* argv[] )
 {
-  char input[] = "hello this is amadeo";
-  reverse_string(input);
+  char testdata[][50] = {
+    "    \0",
+    "hello this is devmates\0",
+    "   hello    this     is devmates\0",
+    "hello    this     is devmates   \0",
+    "  hello this is devmates   \0",
+    "\0"
+  };
 
-  std::cout << input;
+  int i = 0;
+  while ( *testdata[i] != 0 )
+  {
+    std::cout << "reverse   '" << testdata[i];
+    reverse_string( testdata[i] );
+    std::cout << "'  ->  '" << testdata[i] << "'\n";
+    i++;
+  }
+
 }
 

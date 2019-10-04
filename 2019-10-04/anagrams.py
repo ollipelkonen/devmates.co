@@ -14,7 +14,7 @@
 #        ["bat"]
 #      ]
 
-
+import json
 
 
 Input = ["eat", "tea", "tan", "ate", "nat", "bat"]
@@ -28,7 +28,7 @@ for a in Input:
   else:
     dic[key].append(a)
 
-output = dic.values()
+output = list(dic.values())
 
 print(output)
 

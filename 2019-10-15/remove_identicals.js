@@ -20,7 +20,7 @@ Example:
 
 function remove_identicals(s)
 {
-  const k = s.replace( /(.)\1{2}/g, '' );
+  const k = s.replace( /(.)\1{2,}/g, '' );
   if ( k == s ) 
     return k;
   return remove_identicals(k);
@@ -32,6 +32,7 @@ const input = {
   'aaabbbc': 'c',
   'aabbbacd': 'cd',
   'aabbccddeeedcba': '',
+  'aaaa': ''
 };
 
 // testing

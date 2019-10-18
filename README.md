@@ -8,3 +8,4 @@ solutions for some https://devmates.co/ problems
 - 2019-10-11  [php] find the minimum minutes difference between any two
   time points in the list
 - 2019-10-15	[javascript] remove 3 consecutive identical characters
+- 2019-10-18	[c#] Find out how many ways to assign symbols to make sum of integers equal to target T.

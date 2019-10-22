@@ -10,8 +10,10 @@ given a new black stone to be placed on an empty spot. You have to return the nu
 var add_black = function( map, pos ) {
   function flood( map, pos, score=0 )
   {
-    if ( score < 0 || pos.y < 0 || pos.y>=map.length || pos.x<0 || pos.x>=map[0].length )
+    if ( score < 0 )
       return -1;
+    if ( pos.y < 0 || pos.y>=map.length || pos.x<0 || pos.x>=map[0].length )
+      return score;
 
     const current = map[pos.y][pos.x];
     switch( current )
@@ -52,6 +54,7 @@ var add_black = function( map, pos ) {
       flood(board,{x:pos.x,y:pos.y+1}), 
       flood(board,{x:pos.x,y:pos.y-1}) ); 
 }
+
 
 
 

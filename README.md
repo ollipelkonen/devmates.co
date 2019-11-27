@@ -10,3 +10,5 @@ solutions for some https://devmates.co/ problems
 - 2019-10-15	[javascript] remove 3 consecutive identical characters
 - 2019-10-18	[c#] Find out how many ways to assign symbols to make sum of integers equal to target T.
 - 2019-10-22  [javascript] Go: return the number of enemy stones that this move wil…
+- 2019-11-13	[javascript] Zombies in matrix
+- 2019-11-22  [javascript] Integers to english words

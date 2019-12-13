@@ -37,7 +37,6 @@ Initially, all next pointers are set to NULL.
 
 
 #include <iostream>
-#include <tuple>
 #include <memory>
 #include <vector> 
 

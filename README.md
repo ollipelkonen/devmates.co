@@ -14,3 +14,4 @@ solutions for some https://devmates.co/ problems
 - 2019-11-13	[javascript] Zombies in matrix
 - 2019-11-22  [javascript] Integers to english words
 - 2019-11-27  [c#] Basic calculator
+- 2019-12-13  [c++] Tree pointers
